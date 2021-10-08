@@ -21,7 +21,6 @@
          <h2>Navbar With Dropdown</h2>
          <nav class = "navbar navbar-expand-sm bg-secondary navbar-dark">
             <a class = "navbar-brand" href = "#">Navbar</a>
-
             <!-- Hamburger Menu -->
             <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
             <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
@@ -43,10 +42,16 @@
                      <a class = "nav-link" href = "#">Contact</a>
                   </li>
                   <li class = "nav-item dropdown">
-                     <a class = "nav-link" href = "#">Library</a>
+                     <a class = "nav-link dropdown-toggle" href = "#" id= "navbarDropdownMenuLink" role ="button" data-toggle= "dropdown"
+                     aria-haspopup = "true" aria-expanded ="false">Library</a>
+
+                     <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+                        <a class = "dropdown-item" href = "#">HTML-5</a>
+                        <a class = "dropdown-item" href = "#">CSS-3</a>
+                        <a class = "dropdown-item" href = "#">Bootstrap-4</a>
+                   </div>
                   </li>
                </ul>
-               
             </div>
          </nav>
       </div>
